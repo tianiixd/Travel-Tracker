@@ -1,0 +1,30 @@
+{
+  "name": "8.3-travel-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.ts",
+  "scripts": {
+    "dev": "nodemon server.ts",
+    "start": "ts-node server.ts",
+    "build:client": "tsc src/client/script.ts --outDir public/js --module esnext --target es2020 --moduleResolution bundler --watch"
+  },
+  "keywords": [],
+  "author": "tianiixd",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "*",
+    "body-parser": "^2.2.2",
+    "dotenv": "*",
+    "ejs": "*",
+    "express": "*",
+    "pg": "^8.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "*",
+    "@types/node": "*",
+    "@types/pg": "^8.16.0",
+    "nodemon": "*",
+    "ts-node": "*",
+    "typescript": "*"
+  }
+}
